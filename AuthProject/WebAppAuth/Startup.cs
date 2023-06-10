@@ -33,9 +33,7 @@ namespace WebAppAuth
 
             services.AddRazorPages().AddMvcOptions(options =>
             {
-                var policy = new AuthorizationPolicyBuilder()
-                              .RequireAuthenticatedUser()
-                              .Build();
+                var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
                 options.Filters.Add(new AuthorizeFilter(policy));
             }).AddMicrosoftIdentityUI();
         }
@@ -57,6 +55,8 @@ namespace WebAppAuth
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

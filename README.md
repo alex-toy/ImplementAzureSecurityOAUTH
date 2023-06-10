@@ -46,7 +46,7 @@ Now the postman **App Registration** needs an access token in order to access th
 <img src="/pictures/kv4.png" title="Azure Key Vault"  width="500">
 
 - get access token for *vault*
-<img src="/pictures/kv41.png" title="Azure Key Vault"  width="500">
+<img src="/pictures/kv41.png" title="Azure Key Vault"  width="900">
 
 - use it in postman to retrieve the secret
 <img src="/pictures/kv5.png" title="Azure Key Vault"  width="900">
@@ -69,6 +69,8 @@ Now the postman **App Registration** needs an access token in order to access th
 ```
 Microsoft.Identity.Web
 Microsoft.Identity.Web.UI
+Microsoft.EntityFrameworkCore.Design
+Microsoft.EntityFrameworkCore.Sqlite
 ```
 
 - create an application in *Active Directory*
@@ -79,3 +81,12 @@ Microsoft.Identity.Web.UI
 
 - add a platform. Choose Web platform.
 <img src="/pictures/webapp3.png" title="api"  width="900">
+
+- add new scaffolded item
+<img src="/pictures/webapp4.png" title="api"  width="500">
+<img src="/pictures/webapp5.png" title="api"  width="500">
+
+- run the app. Clic on accept and you are signed in.
+<img src="/pictures/webapp6.png" title="api"  width="900">
+
+### Get Access Token
