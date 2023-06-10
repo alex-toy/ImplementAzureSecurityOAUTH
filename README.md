@@ -63,4 +63,17 @@ Now the postman **App Registration** needs an access token in order to access th
 - get access token for *graph*
 <img src="/pictures/api4.png" title="api"  width="900">
 
-### OAUTH grant type - Authorization Code
+### Implementing sign in - sign out
+
+- install packages
+```
+Microsoft.Identity.Web
+Microsoft.Identity.Web.UI
+```
+
+- create an application in *Active Directory*
+<img src="/pictures/webapp.png" title="api"  width="500">
+
+- grab the client id and tenant id and use it in *appsettings.json*
+<img src="/pictures/webapp2.png" title="api"  width="900">
+
