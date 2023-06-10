@@ -57,8 +57,8 @@ Now the postman **App Registration** needs an access token in order to access th
 <img src="/pictures/api.png" title="api"  width="900">
 
 - add a permission. Choose *Microsoft Graph* the *application permission*
-<img src="/pictures/api2.png" title="api"  width="900">
-<img src="/pictures/api3.png" title="api"  width="900">
+<img src="/pictures/api2.png" title="api"  width="500">
+<img src="/pictures/api3.png" title="api"  width="500">
 
 - get access token for *graph*
 <img src="/pictures/api4.png" title="api"  width="900">
@@ -77,3 +77,5 @@ Microsoft.Identity.Web.UI
 - grab the client id and tenant id and use it in *appsettings.json*
 <img src="/pictures/webapp2.png" title="api"  width="900">
 
+- add a platform. Choose Web platform.
+<img src="/pictures/webapp3.png" title="api"  width="900">
