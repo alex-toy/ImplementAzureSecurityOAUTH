@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppAuth", "WebAppAuth\We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppAzureAD", "WebAppAzureAD\WebAppAzureAD.csproj", "{1740BEE4-EB49-4C26-818C-871C926981D6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtectingWebApi", "ProtectingWebApi\ProtectingWebApi.csproj", "{D806650D-E46F-4149-B029-DA6A31B48E70}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1740BEE4-EB49-4C26-818C-871C926981D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1740BEE4-EB49-4C26-818C-871C926981D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1740BEE4-EB49-4C26-818C-871C926981D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D806650D-E46F-4149-B029-DA6A31B48E70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D806650D-E46F-4149-B029-DA6A31B48E70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D806650D-E46F-4149-B029-DA6A31B48E70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D806650D-E46F-4149-B029-DA6A31B48E70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

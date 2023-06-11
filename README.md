@@ -121,3 +121,5 @@ Microsoft.EntityFrameworkCore.Sqlite
 
 - add an identity provider
 <img src="/pictures/ad_auth3.png" title="group claims"  width="900">
+
+### Protecting Web APIs - Setup
