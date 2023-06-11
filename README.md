@@ -110,3 +110,11 @@ Microsoft.EntityFrameworkCore.Sqlite
 
 - run the app
 <img src="/pictures/group_claims2.png" title="group claims"  width="900">
+
+### Azure AD Authentication
+
+- create web app and add its url to the app registration
+<img src="/pictures/ad_auth.png" title="group claims"  width="900">
+
+- run the app
+<img src="/pictures/ad_auth2.png" title="group claims"  width="900">
