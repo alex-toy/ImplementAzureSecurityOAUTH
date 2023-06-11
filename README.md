@@ -90,3 +90,23 @@ Microsoft.EntityFrameworkCore.Sqlite
 <img src="/pictures/webapp6.png" title="api"  width="900">
 
 ### Get Access Token
+
+- add a permission. Choose **Azure Storage**, **Delegated Permissions**
+<img src="/pictures/access_token.png" title="access token"  width="900">
+
+- add roles for another user
+<img src="/pictures/access_token2.png" title="access token"  width="900">
+
+- add a secret for the app
+<img src="/pictures/access_token3.png" title="access token"  width="900">
+
+- run the app
+<img src="/pictures/access_token4.png" title="access token"  width="900">
+
+### Group Claims
+
+- add group claims
+<img src="/pictures/group_claims.png" title="group claims"  width="900">
+
+- run the app
+<img src="/pictures/group_claims2.png" title="group claims"  width="900">
