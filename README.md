@@ -118,3 +118,6 @@ Microsoft.EntityFrameworkCore.Sqlite
 
 - run the app
 <img src="/pictures/ad_auth2.png" title="group claims"  width="900">
+
+- add an identity provider
+<img src="/pictures/ad_auth3.png" title="group claims"  width="900">
