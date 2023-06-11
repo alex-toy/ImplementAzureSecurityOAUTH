@@ -1,8 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Azure.Storage.Blobs;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Microsoft.Identity.Web;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using WebAppAuth.Models;
@@ -12,14 +15,28 @@ namespace WebAppAuth.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        readonly ITokenAcquisition tokenAcquisition;
+        public HomeController(ILogger<HomeController> logger, ITokenAcquisition tokenAcquisition)
         {
             _logger = logger;
+            this.tokenAcquisition = tokenAcquisition;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            string[] scopes = new string[] { "https://storage.azure.com/user_impersonation" };
+
+            Uri blobUri = new Uri("https://appstore100001233.blob.core.windows.net/data/commands.txt");
+
+            TokenAcquisitionTokenCredential credential = new TokenAcquisitionTokenCredential(tokenAcquisition);
+            BlobClient blobClient = new BlobClient(blobUri, credential);
+
+            MemoryStream ms = new MemoryStream();
+            blobClient.DownloadTo(ms);
+            ms.Position = 0;
+            StreamReader _reader = new StreamReader(ms);
+            string str = _reader.ReadToEnd();
+            ViewBag.content = str;
             return View();
         }
 

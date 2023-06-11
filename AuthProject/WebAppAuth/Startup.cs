@@ -29,7 +29,12 @@ namespace WebAppAuth
         {
             services.AddControllersWithViews();
 
-            services.AddMicrosoftIdentityWebAppAuthentication(Configuration, "AzureAd");
+            string[] scopes = new string[] { "https://storage.azure.com/user_impersonation" };
+
+            services.AddMicrosoftIdentityWebAppAuthentication(Configuration, "AzureAd")
+                .EnableTokenAcquisitionToCallDownstreamApi(scopes)
+                .AddInMemoryTokenCaches();
+
 
             services.AddRazorPages().AddMvcOptions(options =>
             {
