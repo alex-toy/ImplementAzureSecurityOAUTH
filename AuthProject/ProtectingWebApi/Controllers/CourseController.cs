@@ -6,7 +6,7 @@ using ProtectingWebApi.Services;
 namespace ProtectingWebApi.Controllers
 {
 
-    //[Authorize]
+    [Authorize]
     [ApiController]
     [Route("/api/Course")]
     public class CourseController : ControllerBase

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppAzureAD", "WebAppAzur
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtectingWebApi", "ProtectingWebApi\ProtectingWebApi.csproj", "{D806650D-E46F-4149-B029-DA6A31B48E70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphApi", "GraphApi\GraphApi.csproj", "{D410F555-0CDC-429F-A4C4-237502CCCC50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D806650D-E46F-4149-B029-DA6A31B48E70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D806650D-E46F-4149-B029-DA6A31B48E70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D806650D-E46F-4149-B029-DA6A31B48E70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D410F555-0CDC-429F-A4C4-237502CCCC50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D410F555-0CDC-429F-A4C4-237502CCCC50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D410F555-0CDC-429F-A4C4-237502CCCC50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D410F555-0CDC-429F-A4C4-237502CCCC50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

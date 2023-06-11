@@ -1,0 +1,17 @@
+[
+    {
+        "CourseID" : "C1",
+        "CourseName" : "azure developper",
+        "Rating" : 2.3
+    },
+    {
+        "CourseID" : "C2",
+        "CourseName" : "azure devops",
+        "Rating" : 3.3
+    },
+    {
+        "CourseID" : "C3",
+        "CourseName" : "azure architect",
+        "Rating" : 2.9
+    }
+]
